@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,16 +10,28 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@drawable/fragment_background"
         android:layout_height="match_parent"
-        android:layout_margin="15dp">
-
+        android:layout_margin="15dp"
+        android:background="@drawable/fragment_background">
 
 
         <TextView
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="profile fragment" />
+            app:fontFamily="@font/nunito_semibold" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/primary_color_btn"
+            android:text="Logout this account"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
     </RelativeLayout>
 

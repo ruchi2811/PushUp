@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         Log.e("20DEC","ON START METHOD");
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser!=null){
+        if(currentUser==null){
             sendToLogin();
         }
     }
