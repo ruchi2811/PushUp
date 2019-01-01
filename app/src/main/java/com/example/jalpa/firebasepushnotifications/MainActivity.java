@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         mNotificationLabel =(TextView) findViewById(R.id.notificationsLabel);
 
         mMainPager = (ViewPager) findViewById(R.id.mainPager);
+        mMainPager.setOffscreenPageLimit(2);
 
         mPagerViewAdapter = new PagerViewAdapter(getSupportFragmentManager());
         mMainPager.setAdapter(mPagerViewAdapter);
